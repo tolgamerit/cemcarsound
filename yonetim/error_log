@@ -1,0 +1,2 @@
+[08-Nov-2016 01:27:56 Europe/Istanbul] PHP Warning:  PDO::__construct(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/adananav/cemcarsound/style/config.php on line 4
+[08-Nov-2016 01:27:56 Europe/Istanbul] PHP Warning:  PDO::__construct(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/adananav/cemcarsound/style/config.php on line 4
