@@ -54,10 +54,10 @@ include("style/config.php");
 
 ?>
 
- <a href="hizmetler.php" class="list-group-item list-group-item-action ">Adana da oto ses sistemi montajı</a>
-  <a href="Adana-da-multimedya-montaji.php" class="list-group-item list-group-item-action ">Adana da multimedya montajı</a>
-  <a href="Adana-da-navigasyon-montaji-ve-tamiri.php" class="list-group-item list-group-item-action active">Adana da navigasyon montajı ve tamiri</a>
-  <a href="Adana-da-navigasyon-haritasi-guncelleme.php" class="list-group-item list-group-item-action">Adana da navigasyon haritası güncelleme</a>     
+ <a href="hizmetler" class="list-group-item list-group-item-action ">Adana da oto ses sistemi montajı</a>
+  <a href="Adana-da-multimedya-montaji" class="list-group-item list-group-item-action ">Adana da multimedya montajı</a>
+  <a href="Adana-da-navigasyon-montaji-ve-tamiri" class="list-group-item list-group-item-action active">Adana da navigasyon montajı ve tamiri</a>
+  <a href="Adana-da-navigasyon-haritasi-guncelleme" class="list-group-item list-group-item-action">Adana da navigasyon haritası güncelleme</a>     
         </a>
 	
 </ul>
@@ -91,7 +91,7 @@ include("style/config.php");
 
     <div class="container-fluid fixed-row-bottom ">
 
-        <div style="background-color:#29ABE2" class="row p-5">
+        <div style="background-color:#6ec7e0" class="row p-5">
         
             <div class="col-md-12 ">
             <div class="row text-right mb-3">

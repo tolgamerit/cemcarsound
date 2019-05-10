@@ -73,7 +73,7 @@ $sorgu = $db->prepare("select * from projeler where seflink=?"); $sorgu->execute
 
     <div class="container-fluid fixed-row-bottom ">
 
-        <div style="background-color:#29ABE2" class="row p-5">
+        <div style="background-color:#6ec7e0" class="row p-5">
         
             <div class="col-md-12 ">
             <div class="row text-right mb-3">

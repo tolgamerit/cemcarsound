@@ -18,7 +18,7 @@ $first = $components[1]; ?>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ml-auto h5">
-                <a class="nav-item nav-link" href="<?php echo $bshrf; ?>index<?php echo $print['uzanti']; ?>" <?php if ($first == "" || $first == "index.php" || $first == "index.html") { } ?>>Anasayfa</a>
+                <a class="nav-item nav-link" href="<?php echo $bshrf; ?>anasayfa<?php echo $print['uzanti']; ?>" <?php if ($first == "" || $first == "index.php" || $first == "index.html") { } ?>>Anasayfa</a>
                 <?php foreach ($db->query("select * from skat order by sira asc") as $skat) { ?>
                 <?php if ($print['hakimizda'] == "1") { } else { ?>
                 <a class="nav-item nav-link" href="<?php echo $bshrf; ?>hakkimizda<?php echo $print['uzanti']; ?>" <?php if ($first == "hakkimizda.php" || $first == "hakkimizda.html" || $first == "hakkimizda.php" || $first == "hakkimizda.html") { } ?>>Hakkımızda</a><?php 
@@ -26,8 +26,7 @@ $first = $components[1]; ?>
 
                 <?php 
               } ?>
-                <?php if ($print['blog'] == "1") { } else { ?><a class="nav-item nav-link" href="<?php echo $bshrf; ?>blog<?php echo $print['uzanti']; ?>" <?php if ($first == "blog.php" || $first == "blog.html" || $first == "single.php" || $first == "blog" || $first == "etiket.php" || $first == "etiket") { } ?>>Blog</a><?php 
-                                                                                                                                                                                                                                                                                                                                } ?>
+
                 <?php if ($print['urunler'] == "1") { } else { ?><a class="nav-item nav-link" href="<?php echo $bshrf; ?>urunler<?php echo $print['uzanti']; ?>" <?php if ($first == "urunler.php" || $first == "urunler.html" || $first == "incele.php" || $first == "incele.html") { } ?>>Ürünler</a><?php 
                                                                                                                                                                                                                                                                                                       } ?>
                 <?php if ($print['hizmetler'] == "1") { } else { ?><a class="nav-item nav-link" href="<?php echo $bshrf; ?>hizmetler<?php echo $print['uzanti']; ?>" <?php if ($first == "hizmetler.php" || $first == "hizmetler.html") { } ?>>Hizmetler</a><?php 
