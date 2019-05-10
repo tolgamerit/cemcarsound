@@ -27,8 +27,8 @@ include("style/config.php");
     <style>
     .list-group-item.active
     {
-        background-color:#29ABE2  !important;
-        border-color:#29ABE2  !important;
+        background-color:#6ec7e0  !important;
+        border-color:#6ec7e0  !important;
     }
     </style>
 </head>
