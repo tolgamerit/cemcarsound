@@ -1,5 +1,5 @@
 <?php if (!defined("include")) {
-  echo '<meta http-equiv="refresh" content="0;URL=../index.php">';
+  echo '<meta http-equiv="refresh" content="0;URL=../anasayfa">';
   exit();
 }
 $directoryURI = $_SERVER['REQUEST_URI'];
@@ -10,7 +10,7 @@ $first = $components[1]; ?>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
 
-        <a class="navbar-brand" href="index.php">
+        <a class="navbar-brand" href="anasayfa">
             <img width="220" height="220" src="style/images/logo.png" alt="Cem Car Sound Logo" class="img-fluid">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
