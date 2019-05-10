@@ -26,8 +26,8 @@ include("style/config.php");
     <style>
     .list-group-item.active
     {
-        background-color:#29ABE2  !important;
-        border-color:#29ABE2  !important;
+        background-color:#6ec7e0  !important;
+        border-color:#6ec7e0  !important;
     }
     </style>
 </head>
@@ -88,9 +88,10 @@ include("style/config.php");
 
 
 
+
     <div class="container-fluid fixed-row-bottom ">
 
-        <div style="background-color:#29ABE2" class="row p-5">
+        <div style="background-color:#6ec7e0" class="row p-5">
         
             <div class="col-md-12 ">
             <div class="row text-right mb-3">

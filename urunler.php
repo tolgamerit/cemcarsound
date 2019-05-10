@@ -22,6 +22,12 @@ include("style/config.php");
 
     <title>Ürünler | <?php echo $print['siteadi']; ?></title>
     <?php echo $print['analytics']; ?>
+    <style>
+    .mn
+    {
+        min-height: 477px !important;
+    }
+    </style>
 </head>
 
 <body>
@@ -31,7 +37,7 @@ include("style/config.php");
 
     <div class="container mt-5 mb-5">
 
-        <div class="card rounded border-0" style="box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)">
+        <div class="card rounded border-0 mn" style="box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)">
             <div class="card-body">
                 <h4 class="card-title p-3"> Markalar</h4>
                 <div class="row p-5">
