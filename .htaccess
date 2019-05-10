@@ -1,6 +1,8 @@
 
 RewriteEngine on
+
 RewriteRule ^iletisim$ iletisim.php [N,L]
+RewriteRule ^anasayfa$ index.php [N,L]
 RewriteRule ^anasayfa$ index.php [N,L]
 RewriteRule ^hakkimizda$ hakkimizda.php [N,L]
 RewriteRule ^hizmetler$ hizmetler.php [N,L]
@@ -8,6 +10,10 @@ RewriteRule ^urunler$ urunler.php [N,L]
 RewriteRule ^Adana-da-multimedya-montaji$ Adana-da-multimedya-montaji.php [N,L]
 RewriteRule ^Adana-da-navigasyon-montaji-ve-tamiri$ Adana-da-navigasyon-montaji-ve-tamiri.php [N,L]
 RewriteRule ^Adana-da-navigasyon-haritasi-guncelleme$ Adana-da-navigasyon-haritasi-guncelleme.php [N,L]
+RewriteRule ^([a-zA-Z0-9_-]+)$ modeller.php?url=$1  [NC,L]
+RewriteRule ^([a-zA-Z0-9_-]+)/cihaz$ urun.php?url=$1  [NC,L]
+RewriteRule ^cihazdetay/([a-zA-Z0-9_-]+)$ incele.php?url=$1  [NC,L]
+
 
 
 Options All -Indexes

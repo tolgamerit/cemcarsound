@@ -18,10 +18,10 @@ $first = $components[1]; ?>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ml-auto h5">
-                <a class="nav-item nav-link" href="<?php echo $bshrf; ?>anasayfa<?php echo $print['uzanti']; ?>" <?php if ($first == "" || $first == "index.php" || $first == "index.html") { } ?>>Anasayfa</a>
+                <a class="nav-item nav-link" href="<?php echo $bshrf; ?>anasayfa<?php echo $print['uzanti']; ?>" <?php if ($first == "anasayfa" || $first == "index.php" || $first == "index.html") { } ?>>Anasayfa</a>
                 <?php foreach ($db->query("select * from skat order by sira asc") as $skat) { ?>
                 <?php if ($print['hakimizda'] == "1") { } else { ?>
-                <a class="nav-item nav-link" href="<?php echo $bshrf; ?>hakkimizda<?php echo $print['uzanti']; ?>" <?php if ($first == "hakkimizda.php" || $first == "hakkimizda.html" || $first == "hakkimizda.php" || $first == "hakkimizda.html") { } ?>>Hakkımızda</a><?php 
+                <a class="nav-item nav-link" href="<?php echo $bshrf; ?>hakkimizda<?php echo $print['uzanti']; ?>" <?php if ($first == "hakkimizda" || $first == "hakkimizda.html" || $first == "hakkimizda.php" || $first == "hakkimizda.html") { } ?>>Hakkımızda</a><?php 
                                                                                                                                                                                                                                                                         } ?>
 
                 <?php 

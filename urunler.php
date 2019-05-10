@@ -1,5 +1,6 @@
 <?php define("include", true);
 include("style/config.php");
+include("style/functions.php");
 
 ?>
 
@@ -8,6 +9,7 @@ include("style/config.php");
 
 <head>
     <meta charset="utf-8">
+    <?php include("style/function.php");?>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
@@ -45,7 +47,7 @@ include("style/config.php");
 <?php $say = 1; foreach($db->query("select * from pkat order by id desc") as $bbb){?>
     <div class="col-lg-3 col-md-4 col-sm-6">
 
-<a href="modeller.php?url=<?php echo $bbb['seflink']; ?>"><img style="box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)" class="img-fluid rounded mx-auto d-block shadow- mt-3 mr-2" src="<?php echo $bbb['resimyolu']; ?>" alt="<?php echo $bbb['marka']; ?>" /></a>
+<a href="<?php echo $bbb['seflink']; ?>"><img style="box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)" class="img-fluid rounded mx-auto d-block shadow- mt-3 mr-2" src="<?php echo $bbb['resimyolu']; ?>" alt="<?php echo $bbb['marka']; ?>" /></a>
 </div>
 <?php }?>
                

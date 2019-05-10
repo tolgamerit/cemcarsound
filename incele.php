@@ -1,6 +1,7 @@
 <?php define("include", true);
 include("style/config.php");
 include("style/functions.php");
+
 $url = htmlentities(htmlclean($_GET['url'])); if($print['incele']=="1"){ header("Location:".$bshrf."index.php"); exit(); }
 $sorgu = $db->prepare("select * from urunler where seflink=?"); $sorgu->execute(array($url)); if($sorgu->rowCount()=="0"){ header("Location: ".$bshrf."index.php"); }else{ $gelen = $sorgu->fetch(PDO::FETCH_ASSOC); ?>
 
@@ -9,6 +10,7 @@ $sorgu = $db->prepare("select * from urunler where seflink=?"); $sorgu->execute(
 <html lang="en">
 
 <head>
+    <?php include("style/function.php");?>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">

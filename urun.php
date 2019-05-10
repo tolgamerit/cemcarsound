@@ -1,5 +1,7 @@
 <?php define("include", true);
 include("style/config.php");
+include("style/functions.php");
+
 $url = $_GET['url'];
 $sorgu = $db->prepare("select * from projeler where seflink=?"); $sorgu->execute(array($url)); $gelen = $sorgu->fetch(PDO::FETCH_ASSOC);
 ?>
@@ -9,6 +11,7 @@ $sorgu = $db->prepare("select * from projeler where seflink=?"); $sorgu->execute
 
 <head>
     <meta charset="utf-8">
+    <?php include("style/function.php");?>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
@@ -49,7 +52,7 @@ $sorgu = $db->prepare("select * from projeler where seflink=?"); $sorgu->execute
 
    
 <div class="card border-0" style="box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)" >
-<a href="incele.php?url=<?php echo $bbb['seflink']; ?>"><img class="card-img-top rounded mx-auto d-block" src="<?php echo $bbb['resimyolu'];?>" alt="Card image cap"></a>
+<a href="cihazdetay/<?php echo $bbb['seflink']; ?>"><img class="card-img-top rounded mx-auto d-block" src="<?php echo $bbb['resimyolu'];?>" alt="Card image cap"></a>
 <div class="card-body">
 <p class="card-text text-center"><?php echo $bbb['baslik'];?></p>
 </div>
