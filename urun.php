@@ -20,7 +20,7 @@ $sorgu = $db->prepare("select * from projeler where seflink=?"); $sorgu->execute
     <meta property="og:title" content="CemCarSound – Adana Multimedya Navigasyon Hizmeti">
     <meta property="og:description" content="CemcarSound - Adana Navigasyon, Geri Dönüş Kamerası Montajı ve Harita Güncelleme ">
     <meta property="og:image" content="https://cemcarsound.com/resimler/slider0.jpg"> 
-    
+    <base href="https://www.cemcarsound.com/">
     <link rel="Shortcut Icon" href="favicon.jpg" type="image/x-icon">
     <meta name="keywords" content="<?php echo $print['keywords']; ?>" />
     <meta name="description" content="<?php echo $print['description']; ?>" />
@@ -52,7 +52,7 @@ $sorgu = $db->prepare("select * from projeler where seflink=?"); $sorgu->execute
 
    
 <div class="card border-0" style="box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)" >
-<a href="cihazdetay/<?php echo $bbb['seflink']; ?>"><img class="card-img-top rounded mx-auto d-block" src="<?php echo $bbb['resimyolu'];?>" alt="Card image cap"></a>
+<a href="https://cemcarsound.com/cihazdetay/<?php echo $bbb['seflink']; ?>"><img class="card-img-top rounded mx-auto d-block" src="<?php echo $bbb['resimyolu'];?>" alt="Card image cap"></a>
 <div class="card-body">
 <p class="card-text text-center"><?php echo $bbb['baslik'];?></p>
 </div>

@@ -42,7 +42,7 @@ include("style/functions.php");
 <?php $gelen= $_GET[url]; foreach($db->query("select * from projeler where kategori='".$gelen."'") as $bbb){?>
     <div class="col-lg-3 col-md-4 col-sm-6">
 
-<a href="<?php echo $bbb['seflink']; ?>/cihaz"><img style="box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)" class="img-fluid rounded mx-auto d-block shadow- mt-3 mr-2" src="<?php echo $bbb['resimyolu']; ?>" alt="<?php echo $bbb['marka']; ?>" /></a>
+<a href="https://cemcarsound.com/<?php echo $bbb['seflink']; ?>/cihaz"><img style="box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)" class="img-fluid rounded mx-auto d-block shadow- mt-3 mr-2" src="<?php echo $bbb['resimyolu']; ?>" alt="<?php echo $bbb['marka']; ?>" /></a>
 </div>
 <?php }?>
                

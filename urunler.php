@@ -21,7 +21,7 @@ include("style/functions.php");
     <link rel="Shortcut Icon" href="favicon.jpg" type="image/x-icon">
     <meta name="keywords" content="<?php echo $print['keywords']; ?>" />
     <meta name="description" content="<?php echo $print['description']; ?>" />
-
+    <base href="https://www.cemcarsound.com/">
     <title>Ürünler | <?php echo $print['siteadi']; ?></title>
     <?php echo $print['analytics']; ?>
     <style>
@@ -47,7 +47,7 @@ include("style/functions.php");
 <?php $say = 1; foreach($db->query("select * from pkat order by id desc") as $bbb){?>
     <div class="col-lg-3 col-md-4 col-sm-6">
 
-<a href="<?php echo $bbb['seflink']; ?>"><img style="box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)" class="img-fluid rounded mx-auto d-block shadow- mt-3 mr-2" src="<?php echo $bbb['resimyolu']; ?>" alt="<?php echo $bbb['marka']; ?>" /></a>
+<a href="https://cemcarsound.com/<?php echo $bbb['seflink']; ?>"><img style="box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)" class="img-fluid rounded mx-auto d-block shadow- mt-3 mr-2" src="<?php echo $bbb['resimyolu']; ?>" alt="<?php echo $bbb['marka']; ?>" /></a>
 </div>
 <?php }?>
                
